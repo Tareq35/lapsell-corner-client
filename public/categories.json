@@ -1,26 +1,26 @@
 [
     {
         "_id": "01",
-        "category_name": "HP"
+        "product_category": "HP"
     },
     {
         "_id": "02",
-        "category_name": "Dell"
+        "product_category": "Dell"
     },
     {
         "_id": "03",
-        "category_name": "Apple"
+        "product_category": "Apple"
     },
     {
         "_id": "04",
-        "category_name": "MSI"
+        "product_category": "MSI"
     },
     {
         "_id": "05",
-        "category_name": "Asus"
+        "product_category": "Asus"
     },
     {
         "_id": "06",
-        "category_name": "Lenovo"
+        "product_category": "Lenovo"
     }
 ]
