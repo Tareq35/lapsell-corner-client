@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "01",
+        "category_name": "HP"
+    },
+    {
+        "_id": "02",
+        "category_name": "Dell"
+    },
+    {
+        "_id": "03",
+        "category_name": "Apple"
+    },
+    {
+        "_id": "04",
+        "category_name": "MSI"
+    },
+    {
+        "_id": "05",
+        "category_name": "Asus"
+    },
+    {
+        "_id": "06",
+        "category_name": "Lenovo"
+    }
+]
