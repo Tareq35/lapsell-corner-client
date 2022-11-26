@@ -1,9 +1,13 @@
 import React from 'react';
+import AdvertisedItems from '../AdvertisedItems/AdvertisedItems';
+import Slider from '../Slider/Slider';
+
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
+            <Slider/>
+            <AdvertisedItems/>
         </div>
     );
 };
