@@ -15,7 +15,7 @@ const Slider = () => {
 
                             <h1 className='text-5xl font-bold text-white text-center'>Welcome to LapSell Corner</h1>
 
-                            <p className='w-1/2 text-xl font-medium text-white mx-auto mt-5'>Buy second-hand, Laptops on LapSell Corner, the world's best online marketplace. top brands, low prices & free shipping on many items.</p>
+                            <p className='w-1/2 text-2xl font-medium text-white mx-auto mt-5'>Buy second-hand, Laptops on LapSell Corner, the world's best online marketplace. top brands, low prices & free shipping on many items.</p>
                         </div>
                         
                     </div>
@@ -33,7 +33,7 @@ const Slider = () => {
 
                             <h1 className='text-5xl font-bold text-white text-center'>Welcome to LapSell Corner</h1>
 
-                            <p className='w-1/2 text-xl font-medium text-white mx-auto mt-5'>Buy second-hand, Laptops on LapSell Corner, the world's best online marketplace. top brands, low prices & free shipping on many items.</p>
+                            <p className='w-1/2 text-2xl font-medium text-white mx-auto mt-5'>Buy second-hand, Laptops on LapSell Corner, the world's best online marketplace. top brands, low prices & free shipping on many items.</p>
                         </div>
                         
                     </div>
@@ -50,7 +50,7 @@ const Slider = () => {
 
                             <h1 className='text-5xl font-bold text-white text-center'>Welcome to LapSell Corner</h1>
 
-                            <p className='w-1/2 text-xl font-medium text-white mx-auto mt-5'>Buy second-hand, Laptops on LapSell Corner, the world's best online marketplace. top brands, low prices & free shipping on many items.</p>
+                            <p className='w-1/2 text-2xl font-medium text-white mx-auto mt-5'>Buy second-hand, Laptops on LapSell Corner, the world's best online marketplace. top brands, low prices & free shipping on many items.</p>
                         </div>
                         
                     </div>
