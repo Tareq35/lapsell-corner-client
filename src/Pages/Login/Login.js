@@ -80,7 +80,7 @@ const Login = () => {
                 </form>
                 <p className='text-white'>New to <span className='text-yellow-200'>LapSell</span>Corner? <Link className='text-secondary' to="/signup">Create New Account</Link></p>
                 <div className="divider text-white">OR</div>
-                <button className='btn btn-outline btn-secondary w-full text-white font-bold'>CONTINUE WITH GOOGLE</button>
+                <button className='btn btn-outline btn-secondary w-full font-bold'>CONTINUE WITH GOOGLE</button>
             </div>
         </div>
     );
