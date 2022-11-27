@@ -1,18 +1,22 @@
 import React, { useContext, useState } from 'react';
 import './login.css';
 import bgImg2 from '../../assets/bg-img/unsplash-DoGVHBMlbSw-unsplash.jpg'
+import { GoogleAuthProvider } from 'firebase/auth';
 import logo from '../../assets/logo/logo.png'
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../context/AuthProvider';
 import useToken from '../../hooks/useToken';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const { signIn } = useContext(AuthContext);
+    const { providerLogin, signIn } = useContext(AuthContext);
+
     const [loginError, setLoginError] = useState('');
     const [loginUserEmail, setLoginUserEmail] = useState('');
     const [token] = useToken(loginUserEmail);
+    const googleProvider = new GoogleAuthProvider();
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -29,6 +33,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                toast('Login Successful.');
                 setLoginUserEmail(data.email);
             })
             .catch(error => {
@@ -36,6 +41,18 @@ const Login = () => {
                 setLoginError(error.message);
             });
     }
+
+    const handleGoogleSignIn = () => {
+        providerLogin(googleProvider)
+            .then(result => {
+                // const user = result.user;
+                // console.log(user);
+                toast('Login Successful.');
+                navigate(from, { replace: true });
+            })
+            .catch(error => console.error(error));
+    }
+
     return (
         <div className='h-[70vh] flex justify-center items-center' style={{
             backgroundImage: `url(${bgImg2})`, backgroundPosition: 'center',
@@ -80,7 +97,7 @@ const Login = () => {
                 </form>
                 <p className='text-white'>New to <span className='text-yellow-200'>LapSell</span>Corner? <Link className='text-secondary' to="/signup">Create New Account</Link></p>
                 <div className="divider text-white">OR</div>
-                <button className='btn btn-outline btn-secondary w-full font-bold'>CONTINUE WITH GOOGLE</button>
+                <button onClick={handleGoogleSignIn} className='btn btn-outline btn-secondary w-full font-bold'>CONTINUE WITH GOOGLE</button>
             </div>
         </div>
     );
