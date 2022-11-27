@@ -5,7 +5,7 @@ const AdvertisedItem = () => {
         <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6'>
             <div className='flex justify-center'>
                 <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    <figure><img src="https://i.ibb.co/Jc5XdxB/hp-15s-spruce-blue-02-500x500.jpg" alt="Shoes" /></figure>
                     <div className="card-body p-5 gap-1">
                         <h2 className="card-title font-bold text-2xl">Laptop</h2>
                         <p className='text-lg font-medium'>Resale Price:</p>

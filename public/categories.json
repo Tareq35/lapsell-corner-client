@@ -1,26 +1,32 @@
 [
     {
         "_id": "01",
-        "product_category": "HP"
+        "product_category": "HP",
+        "brandImg": "https://i.ibb.co/HBBqN4V/Logo-1-dont.jpg"
     },
     {
         "_id": "02",
-        "product_category": "Dell"
+        "product_category": "Dell",
+        "brandImg": "https://i.ibb.co/Kwq2K7b/i-Nfg-XSefx-Eyhis-XTz-F2-Gc-J-1200-80.jpg"
     },
     {
         "_id": "03",
-        "product_category": "Apple"
+        "product_category": "Apple",
+        "brandImg": "https://i.ibb.co/HHm84k8/Apple-Logo.png"
     },
     {
         "_id": "04",
-        "product_category": "MSI"
+        "product_category": "MSI",
+        "brandImg": "https://i.ibb.co/qy7p9St/MSI-Logo.png"
     },
     {
         "_id": "05",
-        "product_category": "Asus"
+        "product_category": "Asus",
+        "brandImg": "https://i.ibb.co/rxqQZJq/79183-1.jpg"
     },
     {
         "_id": "06",
-        "product_category": "Lenovo"
+        "product_category": "Lenovo",
+        "brandImg": "https://i.ibb.co/42TyD2M/images.png"
     }
 ]
