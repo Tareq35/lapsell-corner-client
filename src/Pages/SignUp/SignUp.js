@@ -27,6 +27,7 @@ const SignUp = () => {
     }
 
     const handleSignUp = (data) => {
+        console.log(data);
         setSignUpError('')
         createUser(data.email, data.password)
             .then(result => {
@@ -78,7 +79,7 @@ const SignUp = () => {
 
 
     return (
-        <div className='h-[70vh] flex justify-center items-center' style={{
+        <div className='h-[80vh] flex justify-center items-center' style={{
             backgroundImage: `url(${bgImg2})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
             // minHeight: '100vh',
@@ -93,21 +94,22 @@ const SignUp = () => {
 
                 <form onSubmit={handleSubmit(handleSignUp)}>
                     <div className="form-control w-full max-w-xs">
-                        <label className="label"><span className="label-text text-white">Name</span></label>
+                        <label className="label"><span className="label-text text-white">Name <span className='text-red-500'>*</span></span></label>
                         <input type="text" className="input input-bordered w-full max-w-xs " {...register("name", {
                             required: "Name is Required"
                         })} placeholder="Enter Your Name" />
                         {errors.name && <p className='text-error'>{errors.name.message}</p>}
                     </div>
+
                     <div className="form-control w-full max-w-xs">
-                        <label className="label"><span className="label-text">Email</span></label>
+                        <label className="label"><span className="label-text text-white">Email <span className='text-red-500'>*</span></span></label>
                         <input type="text" className="input input-bordered w-full max-w-xs" {...register("email", {
                             required: true
-                        })} placeholder="Enter Your Email" />
+                        })} placeholder="Enter Your Email" required />
                         {errors.email && <p className='text-error'>{errors.email.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
-                        <label className="label"><span className="label-text text-white">Password</span></label>
+                        <label className="label"><span className="label-text text-white ">Password <span className='text-red-500'>*</span></span></label>
                         <input type="password" className="input input-bordered w-full max-w-xs" {...register("password", {
                             required: "Password is required",
                             minLength: { value: 6, message: "Password must have uppercase number and special character" },
@@ -115,6 +117,16 @@ const SignUp = () => {
                         })} placeholder="Enter Your Password" />
                         {errors.password && <p className='text-error'>{errors.password.message}</p>}
                     </div>
+
+                    <div className='mb-7'>
+                        <label className="label"><span className="label-text text-white font-semibold text-base">Select Account Type <span className='text-red-500'>*</span></span></label>
+
+                        <select {...register("accountType")} className='rounded-lg w-full outline-none px-3 py-3'>
+                            <option value="user">User</option>
+                            <option value="seller">Seller</option>
+                        </select>
+                    </div>
+
                     <input className='btn btn-outline btn-secondary w-full mt-6' value="Sign Up" type="submit" />
                     {signUpError && <p className='text-error'>{signUpError}</p>}
                 </form>
