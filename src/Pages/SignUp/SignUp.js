@@ -39,7 +39,7 @@ const SignUp = () => {
                 }
                 updateUser(userInfo)
                     .then(() => {
-                        saveUser(data.name, data.email);
+                        saveUser(data.name, data.email, data.accountType);
                     })
                     .catch(error => console.log(error));
             })
@@ -54,16 +54,16 @@ const SignUp = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                // saveUser(data.name, data.email);
+                saveUser(user.displayName, user.email,"buyer");
                 toast('User Created Successfully.');
                 navigate(from, { replace: true });
             })
             .catch(error => console.error(error));
     }
 
-    const saveUser = (name, email) => {
-        const user = { name, email };
-        fetch('https://doctors-portal-server-omega-seven.vercel.app/users', {
+    const saveUser = (name, email, accountType) => {
+        const user = { name, email, accountType };
+        fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -82,7 +82,6 @@ const SignUp = () => {
         <div className='h-[80vh] flex justify-center items-center' style={{
             backgroundImage: `url(${bgImg2})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
-            // minHeight: '100vh',
             backgroundRepeat: 'no-repeat'
         }} >
             <div className='w-96 p-9'>
@@ -122,7 +121,7 @@ const SignUp = () => {
                         <label className="label"><span className="label-text text-white font-semibold text-base">Select Account Type <span className='text-red-500'>*</span></span></label>
 
                         <select {...register("accountType")} className='rounded-lg w-full outline-none px-3 py-3'>
-                            <option value="user">User</option>
+                            <option value="buyer">Buyer</option>
                             <option value="seller">Seller</option>
                         </select>
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AddAProduct = () => {
+const AddProduct = () => {
     return (
         <div className='w-96 mx-auto p-7'>
             <h2 className="text-4xl mb-5">Add A Product</h2>
@@ -86,4 +86,4 @@ const AddAProduct = () => {
     );
 };
 
-export default AddAProduct;
+export default AddProduct;
