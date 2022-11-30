@@ -3,7 +3,7 @@ import React from 'react';
 const AddProduct = () => {
     return (
         <div className='w-96 mx-auto p-7'>
-            <h2 className="text-4xl mb-5">Add A Product</h2>
+            <h2 className="text-4xl mb-5">Add Product</h2>
 
             <form>
                 <div className="form-control w-full max-w-xs">
@@ -26,7 +26,7 @@ const AddProduct = () => {
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Category</span></label>
                     <select className="select input-bordered select-secondary w-full max-w-xs">
-                        <option>Hp</option>
+                        <option>HP</option>
                         <option>Apple</option>
                         <option>Asus</option>
                         <option>Dell</option>

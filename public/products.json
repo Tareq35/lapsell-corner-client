@@ -1,7 +1,7 @@
 [
     {
         "_id": "01",
-        "product_category": "HP",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7e"},"product_category":"HP","brandImg":"https://i.ibb.co/HBBqN4V/Logo-1-dont.jpg"},
         "product_name": "HP 15s-du1116TU",
         "condition": "Excellent",
         "resale_price": "300",
@@ -15,11 +15,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/VYMpNwX/15s-du1116tu-01-500x500.jpg"
     },
     {
         "_id": "02",
-        "product_category": "HP",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7e"},"product_category":"HP","brandImg":"https://i.ibb.co/HBBqN4V/Logo-1-dont.jpg"},
         "product_name": "HP 15s-du3611TU",
         "condition": "Good",
         "resale_price": "200",
@@ -33,11 +35,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/NWj3SYw/hp-15s-2-500x500.jpg"
     },
     {
         "_id": "03",
-        "product_category": "HP",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7e"},"product_category":"HP","brandImg":"https://i.ibb.co/HBBqN4V/Logo-1-dont.jpg"},
         "product_name": "HP 15s-eq2171AU",
         "condition": "Excellent",
         "resale_price": "400",
@@ -51,11 +55,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/rkYYfYY/250-g8-01-500x500.jpg"
     },
     {
         "_id": "04",
-        "product_category": "HP",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7e"},"product_category":"HP","brandImg":"https://i.ibb.co/HBBqN4V/Logo-1-dont.jpg"},
         "product_name": "HP 15s-fq5487TU",
         "condition": "Excellent",
         "resale_price": "280",
@@ -69,11 +75,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/VYMpNwX/15s-du1116tu-01-500x500.jpg"
     },
     {
         "_id": "05",
-        "product_category": "Apple",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd80"},"product_category":"Apple","brandImg":"https://i.ibb.co/HHm84k8/Apple-Logo.png"},
         "product_name": "Apple MacBook Air M1",
         "condition": "Excellent",
         "resale_price": "700",
@@ -87,11 +95,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/FV57XYm/macbook-pro-13-inch-m2-space-gray-500x500.jpg"
     },
     {
         "_id": "06",
-        "product_category": "Apple",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd80"},"product_category":"Apple","brandImg":"https://i.ibb.co/HHm84k8/Apple-Logo.png"},
         "product_name": "Apple MacBook Pro M1",
         "condition": "Excellent",
         "resale_price": "1000",
@@ -105,11 +115,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/D8DC0MH/macbook-air-gold-500x500.jpg"
     },
     {
         "_id": "07",
-        "product_category": "Apple",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd80"},"product_category":"Apple","brandImg":"https://i.ibb.co/HHm84k8/Apple-Logo.png"},
         "product_name": "Apple MacBook Pro M2",
         "condition": "Excellent",
         "resale_price": "1300",
@@ -123,11 +135,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/5TGvhXg/macbook-myd92-500x500.jpg"
     },
     {
         "_id": "08",
-        "product_category": "Asus",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd82"},"product_category":"Asus","brandImg":"https://i.ibb.co/rxqQZJq/79183-1.jpg"},
         "product_name": "Asus Vivobook X515MA",
         "condition": "Fair",
         "resale_price": "200",
@@ -141,11 +155,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/p22bN19/vivobook-15-x515ea-05-500x500.jpg"
     },
     {
         "_id": "09",
-        "product_category": "Asus",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd82"},"product_category":"Asus","brandImg":"https://i.ibb.co/rxqQZJq/79183-1.jpg"},
         "product_name": "Asus P1511CMA",
         "condition": "Good",
         "resale_price": "150",
@@ -159,11 +175,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/DwDYwr6/vivobook-15-30-500x500.jpg"
     },
     {
         "_id": "10",
-        "product_category": "Asus",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd82"},"product_category":"Asus","brandImg":"https://i.ibb.co/rxqQZJq/79183-1.jpg"},
         "product_name": "Asus VivoBook 14 X415FA",
         "condition": "Good",
         "resale_price": "350",
@@ -177,11 +195,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/VDndwgk/vivobook-15-x515ea-01-500x500.jpg"
     },
     {
         "_id": "11",
-        "product_category": "Asus",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd82"},"product_category":"Asus","brandImg":"https://i.ibb.co/rxqQZJq/79183-1.jpg"},
         "product_name": "Asus VivoBook 14 X1400EA",
         "condition": "Excellent",
         "resale_price": "600",
@@ -195,11 +215,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/RgZVVBb/vivobook-14-4-500x500.jpg"
     },
     {
         "_id": "12",
-        "product_category": "Dell",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7f"},"product_category":"Dell","brandImg":"https://i.ibb.co/Kwq2K7b/i-Nfg-XSefx-Eyhis-XTz-F2-Gc-J-1200-80.jpg"},
         "product_name": "Dell Inspiron 15 3511",
         "condition": "Fair",
         "resale_price": "290",
@@ -213,11 +235,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/zNTdgvs/xps-15-9510-01-500x500.jpg"
     },
     {
         "_id": "13",
-        "product_category": "Dell",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7f"},"product_category":"Dell","brandImg":"https://i.ibb.co/Kwq2K7b/i-Nfg-XSefx-Eyhis-XTz-F2-Gc-J-1200-80.jpg"},
         "product_name": "Dell Inspiron 15 5515",
         "condition": "Excellent",
         "resale_price": "800",
@@ -231,11 +255,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/C60RbWK/xps-13-1-500x500.jpg"
     },
     {
         "_id": "14",
-        "product_category": "Dell",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7f"},"product_category":"Dell","brandImg":"https://i.ibb.co/Kwq2K7b/i-Nfg-XSefx-Eyhis-XTz-F2-Gc-J-1200-80.jpg"},
         "product_name": "Dell Vostro 15 3510",
         "condition": "Good",
         "resale_price": "900",
@@ -249,11 +275,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/2YYRzVP/latitude-3420-01-500x500.jpg"
     },
     {
         "_id": "15",
-        "product_category": "Dell",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd7f"},"product_category":"Dell","brandImg":"https://i.ibb.co/Kwq2K7b/i-Nfg-XSefx-Eyhis-XTz-F2-Gc-J-1200-80.jpg"},
         "product_name": "Dell XPS 15 9510",
         "condition": "Excellent",
         "resale_price": "1100",
@@ -267,11 +295,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/sVjPQms/inspiron-15-3511-88989-500x500.jpg"
     },
     {
         "_id": "16",
-        "product_category": "Lenovo",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd83"},"product_category":"Lenovo","brandImg":"https://i.ibb.co/42TyD2M/images.png"},
         "product_name": "Lenovo IdeaPad D330 10IGL",
         "condition": "Fair",
         "resale_price": "200",
@@ -285,11 +315,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/1TR77Kb/slim-3i-001-500x500.jpg"
     },
     {
         "_id": "17",
-        "product_category": "Lenovo",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd83"},"product_category":"Lenovo","brandImg":"https://i.ibb.co/42TyD2M/images.png"},
         "product_name": "Lenovo IdeaPad Slim 3i",
         "condition": "Excellent",
         "resale_price": "300",
@@ -303,11 +335,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/LdwNcHk/ideapad-3-01102-500x500.jpg"
     },
     {
         "_id": "18",
-        "product_category": "Lenovo",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd83"},"product_category":"Lenovo","brandImg":"https://i.ibb.co/42TyD2M/images.png"},
         "product_name": "Lenovo IdeaPad 3",
         "condition": "Excellent",
         "resale_price": "300",
@@ -321,11 +355,13 @@
         "mobile_number": "01929295875",
         "description": "The Lenovo IdeaPad 3 comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "not available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/KGNXcGQ/ip-slim-15-500x500-1.jpg"
     },
     {
         "_id": "19",
-        "product_category": "MSI",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd81"},"product_category":"MSI","brandImg":"https://i.ibb.co/qy7p9St/MSI-Logo.png"},
         "product_name": "MSI GF63 Thin 10SCXR",
         "condition": "Excellent",
         "resale_price": "900",
@@ -339,11 +375,13 @@
         "mobile_number": "01929295875",
         "description": "The MSI GF63 Thin 10SCXR comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/b7TJ7Fv/gf63-thin-10scsr-1-500x500-1.jpg"
     },
     {
         "_id": "20",
-        "product_category": "MSI",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd81"},"product_category":"MSI","brandImg":"https://i.ibb.co/qy7p9St/MSI-Logo.png"},
         "product_name": "MSI Modern 15 A5M",
         "condition": "Good",
         "resale_price": "1000",
@@ -357,11 +395,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/hCZhg9x/modern-15-b12m-01-500x500.jpg"
     },
     {
         "_id": "21",
-        "product_category": "MSI",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd81"},"product_category":"MSI","brandImg":"https://i.ibb.co/qy7p9St/MSI-Logo.png"},
         "product_name": "MSI Modern 15 B12M",
         "condition": "Excellent",
         "resale_price": "1300",
@@ -375,11 +415,13 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/z2Kz8bZ/modern-14-b11m-black-01-500x500.jpg"
     },
     {
         "_id": "22",
-        "product_category": "MSI",
+        "product_category": {"_id":{"$oid":"6385cbf967a68f01897bdd81"},"product_category":"MSI","brandImg":"https://i.ibb.co/qy7p9St/MSI-Logo.png"},
         "product_name": "MSI Prestige 14 A11SB",
         "condition": "Fair",
         "resale_price": "900",
@@ -393,6 +435,8 @@
         "mobile_number": "01929295875",
         "description": "The HP 15s-du1116TU comes with Intel Pentium Silver N5030 Processor (4M Cache, 1.10 GHz up to 3.10 GHz) with Intel UHD Graphics 605. This Hp 15s series laptop comes with a micro-edge display, the barely visible bezel revolutionizes your display by letting a larger screen fit into a smaller frame, that is featured 15.6 inch diagonal, HD (1366 x 768), micro-edge, BrightView, 45% NTSC, 220 nits Display.",
         "sales_status": "available",
+        "seller_status": "Unverified",
+        "advertise": false,
         "img": "https://i.ibb.co/sCVg7yJ/gf63-thin-10scsr-1-500x500.jpg"
     }
 ]

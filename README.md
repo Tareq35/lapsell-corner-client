@@ -2,22 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Added Features:
 
-In the project directory, you can run:
+1. Firebase Authentication
+2. React Router Dom
+3. Node MongoDB CRUD
+4. JSON Web Token
+5. React Environment Variable
 
-### `npm start`
+# List of Technologies/Frameworks:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Tailwind CSS
+2. React Hot Toast
+3. Daisy UI
+4. React Icons
+5. React hook form
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
