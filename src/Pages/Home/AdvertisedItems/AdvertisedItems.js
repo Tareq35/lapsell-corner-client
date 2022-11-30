@@ -1,14 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import React, { useState } from 'react';
+import BookingModal from '../../Shared/BookingModal/BookingModal';
+import Loading from '../../Shared/Loading/Loading';
+import ReportModal from '../../Shared/ReportModal/ReportModal';
 import AdvertisedItem from './AdvertisedItem';
 
 const AdvertisedItems = () => {
-    const [advertisedItems, setAdvertisedItems] = useState([])
+    const [bookingItem, setBookingItem] = useState(null);
+    const [reportItem, setReportItem] = useState(null);
+    console.log(bookingItem)
+    const { data: advertisedItems = [], refetch, isLoading } = useQuery({
+        queryKey: ['advertisedProducts'],
+        queryFn: async () => {
+            const res = await fetch(`http://localhost:5000/advertisedProducts`);
+            const data = await res.json();
+            return data
+        }
+    })
 
-    useEffect(() => {
-        fetch('http://localhost:5000/advertisedProducts')
-            .then(res => res.json())
-            .then(data => setAdvertisedItems(data))
-    }, [])
+    if (isLoading) {
+        return <Loading></Loading>
+    }
     return (
         <>
             {
@@ -20,10 +32,28 @@ const AdvertisedItems = () => {
                             advertisedItems.map(advertisedItem => <AdvertisedItem
                                 key={advertisedItem._id}
                                 advertisedItem={advertisedItem}
+                                setBookingItem={setBookingItem}
+                                setReportItem={setReportItem}
                             />)
                         }
 
                     </div>
+                    {
+                        bookingItem &&
+                        <BookingModal
+                            bookingItem={bookingItem}
+                            setBookingItem={setBookingItem}
+                            refetch={refetch}
+                        ></BookingModal>
+                    }
+                    {
+                        reportItem &&
+                        <ReportModal
+                            reportItem={reportItem}
+                            setReportItem={setReportItem}
+
+                        ></ReportModal>
+                    }
                 </section>}
         </>
     );
