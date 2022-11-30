@@ -39,7 +39,7 @@ const SignUp = () => {
                 }
                 updateUser(userInfo)
                     .then(() => {
-                        saveUser(data.name, data.email, data.accountType);
+                        saveUser(data.name, data.email, data.accountType, "POST");
                     })
                     .catch(error => console.log(error));
             })
@@ -54,17 +54,17 @@ const SignUp = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                saveUser(user.displayName, user.email,"buyer");
+                saveUser(user.displayName, user.email,"buyer", "PUT");
                 toast('User Created Successfully.');
                 navigate(from, { replace: true });
             })
             .catch(error => console.error(error));
     }
 
-    const saveUser = (name, email, accountType) => {
+    const saveUser = (name, email, accountType, method) => {
         const user = { name, email, accountType };
         fetch('http://localhost:5000/users', {
-            method: 'POST',
+            method: method,
             headers: {
                 'content-type': 'application/json'
             },

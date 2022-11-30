@@ -45,12 +45,28 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         providerLogin(googleProvider)
             .then(result => {
-                // const user = result.user;
-                // console.log(user);
+                const user = result.user;
+                console.log(user);
+                saveUser(user.displayName, user.email, "buyer", "PUT");
                 toast('Login Successful.');
                 navigate(from, { replace: true });
             })
             .catch(error => console.error(error));
+    }
+
+    const saveUser = (name, email, accountType, method) => {
+        const user = { name, email, accountType };
+        fetch('http://localhost:5000/users', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                setLoginUserEmail(email);
+            })
     }
 
     return (
