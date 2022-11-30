@@ -78,7 +78,7 @@ const AddProduct = () => {
                     <label className="label"><span className="label-text">Product Image</span></label>
                     <input type="file" className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
                 </div>
-                <input className='btn btn-secondary w-full mt-6' value="Add Doctor" type="submit" />
+                <input className='btn btn-secondary w-full mt-6' value="Add Product" type="submit" />
 
 
             </form>

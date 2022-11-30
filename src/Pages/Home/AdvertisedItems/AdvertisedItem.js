@@ -1,5 +1,7 @@
 import React from 'react';
 import { MdVerifiedUser } from 'react-icons/md';
+import moment from 'moment';
+
 
 const AdvertisedItem = ({ advertisedItem }) => {
     const { product_name, resale_price, original_price, use_duration, location, yearOf_purchase, condition, description, seller_name, postedAt, seller_status } = advertisedItem;
@@ -23,7 +25,7 @@ const AdvertisedItem = ({ advertisedItem }) => {
                     <p className='text-lg font-medium'>Location: {location}</p>
                     <p className='text-lg font-medium tooltip text-left' data-tip={description}>Description: <span className='line-clamp-2 font-normal toolt'>{description}</span>
                     </p>
-                    <p className='text-lg font-medium'><span className='text-sm text-green-600'>Date of Post: {postedAt}</span></p>
+                    <p className='text-lg font-medium'><span className='text-sm text-green-600'>Date of Post: {moment(postedAt).format('ll')}</span></p>
 
 
                     <div className="card-actions justify-between items-center">
