@@ -1,7 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../../context/AuthProvider';
 
 const MyProducts = () => {
+    const { user } = useContext(AuthContext);
+
+    const url = `https://lapsell-corner-server.vercel.app/products/${user?.email}`;
+
+    const { data: myProducts = [], refetch } = useQuery({
+
+        queryKey: ['products', user?.email],
+        queryFn: async () => {
+            const res = await fetch(url);
+            const data = await res.json();
+            return data;
+        }
+    })
+    console.log(myProducts)
+
+    const handleAdvertise = (id, advertiseStatus) => {
+        fetch("https://lapsell-corner-server.vercel.app/products", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ id, advertiseStatus }),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                refetch();
+                console.log(data)
+            });
+
+    }
     return (
         <div className='my-7'>
             <h2 className='text-3xl text-center font-semibold mb-5'>My Products</h2>
@@ -19,37 +50,23 @@ const MyProducts = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th>1</th>
+                        {myProducts && myProducts.map((product, i) => <tr key={product._id}>
+                            <th>{i + 1}</th>
                             <td>
                                 <div className="avatar">
                                     <div className="w-24 rounded-full">
-                                        <img src='' alt="" />
+                                        <img src={product.img} alt="" />
                                     </div>
                                 </div>
                             </td>
-                            <td>title</td>
-                            <td>price</td>
-                            <td>available</td>
+                            <td>{product.product_name}</td>
+                            <td>$ {product.resale_price}</td>
+                            <td>{product.sales_status}</td>
                             <td>
-                                {/* {
-                                    booking.price && !booking.paid && <Link
-                                        to={`/dashboard/payment/${booking._id}`}>
-                                        <button
-                                            className='btn btn-primary btn-sm'
-                                        >Pay</button>
-                                    </Link>
-                                }
-                                {
-                                    booking.price && booking.paid && <span className='text-green-500'>Paid</span>
-                                } */}
+                                <button onClick={() => handleAdvertise(product._id, product.advertise)}
+                                    className='btn btn-primary btn-sm'
+                                >{product.advertise === true ? "Advertise On" : "Advertise Off"}</button>
 
-                                <Link
-                                    to={`/dashboard/payment/id`}>
-                                    <button
-                                        className='btn btn-primary btn-sm'
-                                    >Advertise</button>
-                                </Link>
                             </td>
                             <td>
                                 {/* <label
@@ -57,7 +74,7 @@ const MyProducts = () => {
 
                                 <label className="btn btn-sm btn-error">Delete</label>
                             </td>
-                        </tr>
+                        </tr>)}
                     </tbody>
                 </table>
             </div>

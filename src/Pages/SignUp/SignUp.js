@@ -54,7 +54,7 @@ const SignUp = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                saveUser(user.displayName, user.email,"buyer", "PUT");
+                saveUser(user.displayName, user.email, "buyer", "PUT");
                 toast('User Created Successfully.');
                 navigate(from, { replace: true });
             })
@@ -63,7 +63,7 @@ const SignUp = () => {
 
     const saveUser = (name, email, accountType, method) => {
         const user = { name, email, accountType };
-        fetch('http://localhost:5000/users', {
+        fetch('https://lapsell-corner-server.vercel.app/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import toast from 'react-hot-toast';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider';
 
 const BookingModal = ({ bookingItem, setBookingItem, refetch }) => {
@@ -12,22 +12,23 @@ const BookingModal = ({ bookingItem, setBookingItem, refetch }) => {
     const handleBooking = e => {
         e.preventDefault();
         const form = e.target;
-        const name= form.name.value;
-        const email= form.email.value;
-        const price= form.price.value;
-        const phone= form.phone.value;
-        const location= form.location.value;
+        const name = form.name.value;
+        const email = form.email.value;
+        const price = Number(resale_price);
+        const phone = form.phone.value;
+        const location = form.location.value;
 
-        const booking= {
+        const booking = {
             name,
             email,
             price,
             phone,
             location,
+            paid: false,
             bookingProduct: bookingItem
         }
 
-        fetch('http://localhost:5000/bookingProducts', {
+        fetch('https://lapsell-corner-server.vercel.app/bookingProducts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -40,7 +41,7 @@ const BookingModal = ({ bookingItem, setBookingItem, refetch }) => {
                 if (data.acknowledged) {
                     setBookingItem(null);
                     toast.success('Booking confirmed');
-                    if(refetch){refetch()};
+                    if (refetch) { refetch() };
                     navigate('/dashboard')
                 }
                 else {
@@ -61,7 +62,7 @@ const BookingModal = ({ bookingItem, setBookingItem, refetch }) => {
 
                         <input name='email' type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
 
-                        <input name='price' type="text" disabled value= {`$ ${resale_price}`} className="input w-full input-bordered" />
+                        <input name='price' type="text" disabled value={`$ ${resale_price}`} className="input w-full input-bordered" />
 
                         <input name='phone' type="number" placeholder="Phone Number" className="input w-full input-bordered" />
 

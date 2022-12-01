@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdVerifiedUser } from 'react-icons/md';
 import moment from 'moment';
+import { AuthContext } from '../../context/AuthProvider';
+import useAdmin from '../../hooks/useAdmin';
+import useSeller from '../../hooks/useSeller';
 
 const Products = ({ product, setBookingItem, setReportItem }) => {
+    const { user } = useContext(AuthContext);
+    const [isAdmin] = useAdmin(user?.email);
+    const [isSeller] = useSeller(user?.email);
+
     const { product_name, resale_price, original_price, use_duration, location, yearOf_purchase, condition, description, seller_name, postedAt, seller_status } = product;
     return (
 
@@ -26,6 +33,7 @@ const Products = ({ product, setBookingItem, setReportItem }) => {
                     <div className="card-actions justify-between items-center">
                     <label
                             htmlFor="booking-modal"
+                            disabled={isAdmin || isSeller }
                             className="btn btn-small btn-error "
                             onClick={() => setReportItem(product)}
                         >Report</label>
@@ -33,6 +41,7 @@ const Products = ({ product, setBookingItem, setReportItem }) => {
                         
                         <label
                             htmlFor="booking-modal"
+                            disabled={isAdmin || isSeller }
                             className="btn btn-secondary"
                             onClick={() => setBookingItem(product)}
                         >Book Now</label>

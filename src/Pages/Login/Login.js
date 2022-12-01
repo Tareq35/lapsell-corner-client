@@ -56,7 +56,7 @@ const Login = () => {
 
     const saveUser = (name, email, accountType, method) => {
         const user = { name, email, accountType };
-        fetch('http://localhost:5000/users', {
+        fetch('https://lapsell-corner-server.vercel.app/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

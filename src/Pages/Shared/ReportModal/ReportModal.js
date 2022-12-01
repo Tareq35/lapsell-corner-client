@@ -22,7 +22,7 @@ const ReportModal = ({ reportItem, setReportItem }) => {
             reportProduct: reportItem
         }
 
-        fetch('http://localhost:5000/reportedProducts', {
+        fetch('https://lapsell-corner-server.vercel.app/reportedProducts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

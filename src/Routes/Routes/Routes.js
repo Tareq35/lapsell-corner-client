@@ -8,6 +8,7 @@ import AllBuyers from "../../Pages/Dashboard/AllBuyers/AllBuyers";
 import AllSellers from "../../Pages/Dashboard/AllSellers/AllSellers";
 import MyOrders from "../../Pages/Dashboard/MyOrders/MyOrders";
 import MyProducts from "../../Pages/Dashboard/MyProducts/MyProducts";
+import Payment from "../../Pages/Dashboard/Payment/Payment";
 import ReportedItems from "../../Pages/Dashboard/ReportedItems/ReportedItems";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
@@ -37,7 +38,7 @@ export const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <CategoryProducts></CategoryProducts>
                 </PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/categoryProducts/${params.id}`)
+                loader: ({ params }) => fetch(`https://lapsell-corner-server.vercel.app/categoryProducts/${params.id}`)
             },
             {
                 path: '/login',
@@ -94,6 +95,11 @@ export const router = createBrowserRouter([
                     <ReportedItems></ReportedItems>
                 </AdminRoute>
             },
+            {
+                path: '/dashboard/payment/:id',
+                element: <Payment></Payment>,
+                loader: ({ params }) => fetch(`https://lapsell-corner-server.vercel.app/bookingProducts/pay/${params.id}`)
+            }
         ]
     }
 ])
