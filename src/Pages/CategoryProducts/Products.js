@@ -10,15 +10,15 @@ const Products = ({ product, setBookingItem, setReportItem }) => {
     const [isAdmin] = useAdmin(user?.email);
     const [isSeller] = useSeller(user?.email);
 
-    const { product_name, resale_price, original_price, use_duration, location, yearOf_purchase, condition, description, seller_name, postedAt, seller_status } = product;
+    const {img, product_name, resale_price, original_price, use_duration, location, yearOf_purchase, condition, description, seller_name, postedAt, verify } = product;
     return (
 
         <div className='flex justify-center'>
             <div className="card bg-base-100 shadow-xl">
-                <figure><img src="https://i.ibb.co/Jc5XdxB/hp-15s-spruce-blue-02-500x500.jpg" alt="Shoes" /></figure>
+                <figure><img src={img} alt="Shoes" /></figure>
                 <div className="card-body p-5 gap-1">
                     <h2 className="card-title font-bold text-2xl">{product_name}</h2>
-                    <p className='text-lg font-medium flex  items-center gap-2'>Seller Name: {seller_name} {seller_status === "verified" &&
+                    <p className='text-lg font-medium flex  items-center gap-2'>Seller Name: {seller_name} {verify &&
                         <span className='text-blue-600'><MdVerifiedUser /></span>}</p>
                     <p className='text-lg font-medium'>Resale Price: ${resale_price}</p>
                     <p className='text-lg font-medium'>Original Price: ${original_price}</p>

@@ -6,7 +6,6 @@ import { AuthContext } from '../../../context/AuthProvider';
 const BookingModal = ({ bookingItem, setBookingItem, refetch }) => {
 
     const navigate = useNavigate();
-    console.log(bookingItem);
     const { user } = useContext(AuthContext);
     const { product_name, resale_price, } = bookingItem;
     const handleBooking = e => {
@@ -37,7 +36,6 @@ const BookingModal = ({ bookingItem, setBookingItem, refetch }) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.acknowledged) {
                     setBookingItem(null);
                     toast.success('Booking confirmed');

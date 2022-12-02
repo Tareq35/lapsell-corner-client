@@ -1,9 +1,16 @@
 import { useQuery } from '@tanstack/react-query';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
+import toast from 'react-hot-toast';
 import { AuthContext } from '../../../context/AuthProvider';
+import ConfirmationModal from '../../Shared/Confirmation/ConfirmationModal';
 
 const MyProducts = () => {
     const { user } = useContext(AuthContext);
+    const [deletingProduct, setDeletingProduct] = useState(null);
+
+    const closeModal = () => {
+        setDeletingProduct(null);
+    }
 
     const url = `https://lapsell-corner-server.vercel.app/products/${user?.email}`;
 
@@ -16,7 +23,6 @@ const MyProducts = () => {
             return data;
         }
     })
-    console.log(myProducts)
 
     const handleAdvertise = (id, advertiseStatus) => {
         fetch("https://lapsell-corner-server.vercel.app/products", {
@@ -29,9 +35,20 @@ const MyProducts = () => {
             .then((res) => res.json())
             .then((data) => {
                 refetch();
-                console.log(data)
             });
 
+    }
+    const handleDeleteProduct = product => {
+        fetch(`https://lapsell-corner-server.vercel.app/products/${product._id}`, {
+            method: 'DELETE',
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount > 0) {
+                    refetch();
+                    toast.success(`Product ${product.product_name} deleted successfully`)
+                }
+            })
     }
     return (
         <div className='my-7'>
@@ -69,15 +86,24 @@ const MyProducts = () => {
 
                             </td>
                             <td>
-                                {/* <label
-                                    onClick={() => setDeletingDoctor(doctor)} htmlFor="confirmation-modal" className="btn btn-sm btn-error">Delete</label> */}
+                                <label
+                                    onClick={() => setDeletingProduct(product)} htmlFor="confirmation-modal" className="btn btn-sm btn-error">Delete</label>
 
-                                <label className="btn btn-sm btn-error">Delete</label>
                             </td>
                         </tr>)}
                     </tbody>
                 </table>
             </div>
+            {
+                deletingProduct && <ConfirmationModal
+                    title={`Are you sure you want to delete?`}
+                    message={`If you delete ${deletingProduct.product_name}. It cannot be undone.`}
+                    successAction={handleDeleteProduct}
+                    successButtonName="Delete"
+                    modalData={deletingProduct}
+                    closeModal={closeModal}
+                ></ConfirmationModal>
+            }
         </div>
     );
 };

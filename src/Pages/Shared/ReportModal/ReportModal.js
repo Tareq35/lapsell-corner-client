@@ -4,7 +4,6 @@ import { AuthContext } from '../../../context/AuthProvider';
 
 const ReportModal = ({ reportItem, setReportItem }) => {
 
-    console.log(reportItem);
     const { user } = useContext(AuthContext);
     const { product_name } = reportItem;
 
@@ -31,7 +30,6 @@ const ReportModal = ({ reportItem, setReportItem }) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.acknowledged) {
                     setReportItem(null);
                     toast.success('Reported Successfully');

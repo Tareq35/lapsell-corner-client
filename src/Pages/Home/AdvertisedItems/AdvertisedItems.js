@@ -8,7 +8,6 @@ import AdvertisedItem from './AdvertisedItem';
 const AdvertisedItems = () => {
     const [bookingItem, setBookingItem] = useState(null);
     const [reportItem, setReportItem] = useState(null);
-    console.log(bookingItem)
     const { data: advertisedItems = [], refetch, isLoading } = useQuery({
         queryKey: ['advertisedProducts'],
         queryFn: async () => {

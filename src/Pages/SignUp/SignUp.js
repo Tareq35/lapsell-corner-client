@@ -27,12 +27,10 @@ const SignUp = () => {
     }
 
     const handleSignUp = (data) => {
-        console.log(data);
         setSignUpError('')
         createUser(data.email, data.password)
             .then(result => {
                 const user = result.user;
-                console.log(user);
                 toast('User Created Successfully.');
                 const userInfo = {
                     displayName: data.name
@@ -53,7 +51,6 @@ const SignUp = () => {
         providerLogin(googleProvider)
             .then(result => {
                 const user = result.user;
-                console.log(user);
                 saveUser(user.displayName, user.email, "buyer", "PUT");
                 toast('User Created Successfully.');
                 navigate(from, { replace: true });

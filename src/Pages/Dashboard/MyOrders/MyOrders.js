@@ -17,7 +17,6 @@ const MyOrders = () => {
             return data;
         }
     })
-    console.log(myOrders)
     return (
         <div className='my-7'>
             <h2 className='text-3xl text-center font-semibold mb-5'>My Orders</h2>

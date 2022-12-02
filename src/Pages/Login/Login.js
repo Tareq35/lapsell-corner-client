@@ -27,17 +27,14 @@ const Login = () => {
     }
 
     const handleLogin = data => {
-        console.log(data);
         setLoginError('');
         signIn(data.email, data.password)
             .then(result => {
                 const user = result.user;
-                console.log(user);
                 toast('Login Successful.');
                 setLoginUserEmail(data.email);
             })
             .catch(error => {
-                console.log(error.message)
                 setLoginError(error.message);
             });
     }
@@ -46,7 +43,6 @@ const Login = () => {
         providerLogin(googleProvider)
             .then(result => {
                 const user = result.user;
-                console.log(user);
                 saveUser(user.displayName, user.email, "buyer", "PUT");
                 toast('Login Successful.');
                 navigate(from, { replace: true });
